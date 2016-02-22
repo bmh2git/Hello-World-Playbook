@@ -1,5 +1,5 @@
 ---
-- name: Hello Wolrd
+- name: Hello World
   hosts: all 
   tasks:
     - name: Say Hello
