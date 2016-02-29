@@ -9,6 +9,6 @@
         template: ubuntu-14-64
         location: 'CA1'
         group: 'Default Group'
-        count: 1
+        count: 2
       register: clc-svr
     - debug: var=clc_svr
