@@ -5,10 +5,10 @@
   tasks:
     - name: create server
       clc_server:
-        name: btest
+        name: ctest
         template: ubuntu-14-64
         location: 'CA1'
         group: 'Default Group'
-        count: 2
+        count: 1
       register: clc-svr
     - debug: var=clc_svr
