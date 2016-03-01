@@ -5,5 +5,5 @@
   tasks:
     - name: create server
       clc_server:
-        serverids: "{{ srvr }}"
+        server_ids: "{{ srvr }}"
         state: absent
