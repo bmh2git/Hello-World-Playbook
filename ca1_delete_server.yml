@@ -1,0 +1,15 @@
+---
+- name: test create server
+  hosts: localhost
+  gather_facts: False
+  tasks:
+    - name: create server
+      clc_server:
+        name: ctest
+        template: ubuntu-14-64
+        location: 'CA1'
+        group: 'Default Group'
+        count: 1
+        state: absent
+      register: clc-svr
+    - debug: var=clc_svr
